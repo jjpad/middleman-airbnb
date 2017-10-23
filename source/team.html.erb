@@ -1,0 +1,16 @@
+---
+title: Team
+---
+
+<div class="container-new">
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path 'nyc.jpg' %>)"%>
+<ul class="list-inline text-center">
+  <% ["eltigredc", "ssaunier", "monsieurpaillard"].each do |gh_username| %>
+    <li>
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-circle large" %>
+      <h3><%= gh_username.capitalize %></h3>
+    </li>
+  <% end %>
+</ul>
+
+</div>
